@@ -7,5 +7,5 @@ open_tls                        = false
 [MySQL]
 url                             = "127.0.0.1:3306"
 user                            = "root"
-pwd                             = ""
-db_name                          = "niuniumart"
+pwd                             = "123456"
+db_name                          = "mydb"

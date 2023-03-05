@@ -82,7 +82,7 @@ const (
 func GetConfEnv() string {
 	usage := "./main {$env} "
 
-	env := os.Getenv("ENV")
+	env := os.Getenv("ENV") //os包里的函数
 	if env == "" {
 		if len(os.Args) < 2 {
 			fmt.Println("not enough params, usage:  ", usage)
@@ -100,7 +100,7 @@ func GetConfEnv() string {
 
 func Init() {
 	//初始化配置
-	env := GetConfEnv()
+	env := GetConfEnv() //是用文件后缀来决定读取的配置文件及当前环境是测试还是生产
 	InitConf(env)
 }
 
